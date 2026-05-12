@@ -7,7 +7,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: #ffffff; /* Color de fondo crema por si acaso */
+    background-color: #ffffff; 
 }
 
 #welcome-screen {
@@ -16,9 +16,7 @@ body, html {
     left: 0;
     width: 100vw; 
     height: 100vh;
-    
- 
-    background: url(img/loading.png) no-repeat center center;
+    background: url(../img/loading.png) no-repeat center center;
     background-size: cover; 
     
     z-index: 999;
