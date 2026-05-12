@@ -12,15 +12,3 @@
   <a href="#slide3">3</a>
 </div>
 
-<style>
-  .slides {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-  }
-  .slide {
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-  }
-</style>   
