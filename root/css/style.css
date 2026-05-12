@@ -1,0 +1,26 @@
+/* Simple CSS Slider with Tap Navigation currently broken but code is here for now*/
+
+<div class="slider">
+  <div class="slides">
+    <div class="slide"><img src="image1.jpg" alt="1"></div>
+    <div class="slide"><img src="image2.jpg" alt="2"></div>
+    <div class="slide"><img src="image3.jpg" alt="3"></div>
+  </div>
+  <!-- Tap navigation -->
+  <a href="#slide1">1</a>
+  <a href="#slide2">2</a>
+  <a href="#slide3">3</a>
+</div>
+
+<style>
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+</style>   
