@@ -1,0 +1,31 @@
+
+/*GLOBALS*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ffffff; /* Color de fondo crema por si acaso */
+}
+
+#welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    
+ 
+    background: url(img/loading.png) no-repeat center center;
+    background-size: cover; 
+    
+    z-index: 999;
+    cursor: pointer;
+    transition: transform 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.slide-up {
+    transform: translateY(-100%);
+}
