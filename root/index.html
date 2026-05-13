@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
+<body>
 <!--WELCOME SCREEN-->
 <section>
     <div id="welcome-screen"></div>
@@ -48,30 +49,19 @@
 <section>
 <button id="showFormBtn">Continue to Payment TEST</button>
 
-<div id="paymentForm">
+<form id="paymentForm">
 
-    <label for="emailInput">Email</label>
     <input id="emailInput" name="Email" type="email" placeholder="Email Address" required>
-
-    <label for="nameInput">Name</label>
     <input id="nameInput" name="Name" type="text" placeholder="Full name on the card" required>
-
-    <label for="nameInput">Card Type</label>
-    <input id="nameInput" name="Name" type="text" placeholder="Card Type" required>
-
-    <label for="nameInput">Card Number</label>
-    <input id="nameInput" name="Name" type="text" placeholder="Card Number" required>
-
-    <label for="nameInput">Expiry Date</label>
-    <input id="nameInput" name="Name" type="text" placeholder="mm/yy" required>
-
-    <label for="nameInput">CVV</label>
-    <input id="nameInput" name="Name" type="text" placeholder="123" required>
+    <input id="CardTypeInput" name="Name" type="text" placeholder="Card Type" required>
+    <input id="CardNumberInput" name="Name" type="text" placeholder="Card Number" required>
+    <input id="ExpiryInput" name="Name" type="text" placeholder="mm/yy" required>
+    <input id="CVVInput" name="Name" type="text" placeholder="123" required>
 
 
     <input class="submitBtn" type="submit">
 
-</div>
+</form>
 
 </section>
 

@@ -25,6 +25,6 @@ $(document).ready(function() {
 });
 
 $('#showFormBtn').on('click', function() {
-    $('#paymentForm').fadeIn(100);
+    $('#paymentForm').css('display', 'flex').hide().fadeIn(100);
     $(this).hide();
 });

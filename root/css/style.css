@@ -83,11 +83,23 @@ body, html {
     display: none; 
 }
 
+
+/* Payment Details */
 #showFormBtn {
     margin-top: 10rem;
 }
 
 #paymentForm {
-    margin-top: 10rem;
     display: none;
+    margin-top: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+#paymentForm input {
+    width: 200px;
+    padding: 10px;
 }
