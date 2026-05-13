@@ -24,6 +24,8 @@ $(document).ready(function() {
 
 });
 
+
+// Payment info
 $('#showFormBtn').on('click', function() {
     $('#paymentForm').css('display', 'flex').hide().fadeIn(100);
     $(this).hide();
