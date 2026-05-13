@@ -68,3 +68,17 @@ body, html {
     background-color: #6A7037;
     border-radius: 2px;
 }
+
+/*Confirmation Screen*/
+
+#confirmation-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh; 
+    background: url(../img/confirmation.png) no-repeat center center;
+    background-size: cover; 
+    z-index: 999;
+    display: none; 
+}
