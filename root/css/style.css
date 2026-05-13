@@ -85,12 +85,13 @@ body, html {
     background-color: #6A7037;
 }
 
-}
-
-
 /* Payment Details */
 #showFormBtn {
-    margin-top: 400px;
+    margin-top: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
 }
 
 #paymentForm {
