@@ -20,4 +20,11 @@ $(document).ready(function() {
         console.log("Menú abierto");
     });
 
+    
+
+});
+
+$('#showFormBtn').on('click', function() {
+    $('#paymentForm').fadeIn(100);
+    $(this).hide();
 });

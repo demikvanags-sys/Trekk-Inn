@@ -82,3 +82,12 @@ body, html {
     z-index: 999;
     display: none; 
 }
+
+#showFormBtn {
+    margin-top: 10rem;
+}
+
+#paymentForm {
+    margin-top: 10rem;
+    display: none;
+}
