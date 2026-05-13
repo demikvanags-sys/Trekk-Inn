@@ -77,16 +77,20 @@ body, html {
     left: 0;
     width: 100vw; 
     height: 100vh; 
-    background: url(../img/confirmation.png) no-repeat center center;
+    background: url(../img/confirmation.png) no-repeat center center; /*current placeholder for image*/
     background-size: cover; 
     z-index: 999;
-    display: none; 
+    display: none;
+    font: bold 24px 'Arial', sans-serif;
+    background-color: #6A7037;
+}
+
 }
 
 
 /* Payment Details */
 #showFormBtn {
-    margin-top: 10rem;
+    margin-top: 400px;
 }
 
 #paymentForm {
@@ -103,3 +107,6 @@ body, html {
     width: 200px;
     padding: 10px;
 }
+
+
+
