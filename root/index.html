@@ -1,92 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trekk-Inn</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
-</head>
-
-<!--WELCOME SCREEN-->
-<section>
-    <div id="welcome-screen"></div>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+  </head>
 
+  <body>
+    <!--WELCOME SCREEN-->
+    <section>
+      <div id="welcome-screen"></div>
+    </section>
 
-</section>
-
-<!--NAV BAR-->
-<section>
-    <nav id="nav-bar" style="display: none;">
+    <!--NAV BAR-->
+    <section>
+      <nav id="nav-bar" style="display: none">
         <div class="header-container">
-            <div class="burger-menu" id="open-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+          <div class="burger-menu" id="open-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-    </nav>
+      </nav>
+    </section>
 
-</section>
+    <!--HOME-->
+    <section>
+      <button id="showPaymentBtn">TEST CARD DETAILS</button>
+    </section>
 
-<!--HOME-->
-<section>
+    <!--PRODUCT PAGE-->
+    <section></section>
 
-</section>
+    <!--PRODUCT PAYMENT-->
+    <section></section>
 
-<!--PRODUCT PAGE-->
-<section>
+    <!--CARD DETAILS-->
+    <section>
+      <button id="showFormBtn">Continue to Payment TEST</button>
 
-</section>
+      <form id="paymentForm">
+        <input
+          id="emailInput"
+          name="Email"
+          type="email"
+          placeholder="Email Address"
+          required
+        />
+        <input
+          id="nameInput"
+          name="Name"
+          type="text"
+          placeholder="Full name on the card"
+          required
+        />
+        <input
+          id="CardTypeInput"
+          name="Name"
+          type="text"
+          placeholder="Card Type"
+          required
+        />
+        <input
+          id="CardNumberInput"
+          type="text"
+          placeholder="Card Number"
+          required
+        />
+        <input id="ExpiryInput" type="text" placeholder="MM/YY" required />
+        <input id="CVVInput" type="text" placeholder="CVV" required />
 
-<!--PRODUCT PAYMENT-->
-<section>
+        <input class="submitBtn" type="submit" />
+      </form>
+    </section>
 
-</section>
-
-<!--CARD DETAILS-->
-<section>
-    
-</section>
-
-<!--CONFIRMATION-->
-<section>
-    <div class="confirmation-screen">
-        <div class="confirmation-text">
-            
-        </div>
+    <!--CONFIRMATION-->
+    <section>
+      <div class="confirmation-screen">
+        <div class="confirmation-text"></div>
         <span class="label">Order ID:""</span>
-                    <span class="value">#123456789</span>
+        <span class="value">#123456789</span>
         <h2>YOU ARE ALL SORTED!</h2>
-    </div>
+      </div>
+    </section>
 
+    <!--MENU-->
+    <section></section>
 
-</section>
+    <!--ABOUT US-->
+    <section></section>
 
-<!--MENU-->
-<section>
+    <!--TERMS AND CONDITIONS-->
 
-</section>
+    <section></section>
 
-<!--ABOUT US-->
-<section>
-
-</section>
-
-<!--TERMS AND CONDITIONS-->
-
-<section>
-
-</section>
-
-<!--FOOTER-->
-<section>
-
-</section>
-
-</body>
+    <!--FOOTER-->
+    <section></section>
+  </body>
 </html>
-

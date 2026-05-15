@@ -80,16 +80,33 @@ body, html {
     background: url(../img/confirmation.png) no-repeat center center; /*current placeholder for image*/
     background-size: cover; 
     z-index: 999;
-    display: none; 
+    display: none;
     font: bold 24px 'Arial', sans-serif;
     background-color: #6A7037;
 }
 
-/*Confirmation Screen Text*/
+/* Payment Details */
+#showFormBtn {
+    margin-top: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+}
 
-#confirmation-text {
-    
+#paymentForm {
+    display: none;
+    margin-top: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
 
+#paymentForm input {
+    width: 200px;
+    padding: 10px;
 }
 
 

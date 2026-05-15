@@ -20,4 +20,13 @@ $(document).ready(function() {
         console.log("Menú abierto");
     });
 
+    
+
+});
+
+
+// Payment info
+$('#showFormBtn').on('click', function() {
+    $('#paymentForm').css('display', 'flex').hide().fadeIn(100);
+    $(this).hide();
 });
