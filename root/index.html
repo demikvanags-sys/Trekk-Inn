@@ -44,35 +44,20 @@
       <button id="showFormBtn">Continue to Payment TEST</button>
 
       <form id="paymentForm">
-        <input
-          id="emailInput"
-          name="Email"
-          type="email"
-          placeholder="Email Address"
-          required
-        />
-        <input
-          id="nameInput"
-          name="Name"
-          type="text"
-          placeholder="Full name on the card"
-          required
-        />
-        <input
-          id="CardTypeInput"
-          name="Name"
-          type="text"
-          placeholder="Card Type"
-          required
-        />
-        <input
-          id="CardNumberInput"
-          type="text"
-          placeholder="Card Number"
-          required
-        />
-        <input id="ExpiryInput" type="text" placeholder="MM/YY" required />
-        <input id="CVVInput" type="text" placeholder="CVV" required />
+        <input id="emailInput" name="Email" type="email" placeholder="Email Address" required/>
+        <input id="nameInput" name="Name" type="text" placeholder="Full name on the card" required/>
+
+        <select id="CardTypeInput" name="CardType" required>
+          <option value="" disabled selected>Select Card Type</option>
+          <option value="Visa">Visa</option>
+          <option value="MasterCard">MasterCard</option>
+          <option value="American Express">American Express</option>
+          <option value="Discover">Discover</option>
+        </select>
+
+        <input id="CardNumberInput" type="text" placeholder="Card Number" maxlength="19 "required/>
+        <input id="ExpiryInput" type="text" placeholder="MM/YY" maxlength="5" required />
+        <input id="CVVInput" type="text" placeholder="CVV" maxlength="3" required />
 
         <input class="submitBtn" type="submit" />
       </form>

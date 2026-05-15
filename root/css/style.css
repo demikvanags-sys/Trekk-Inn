@@ -1,113 +1,125 @@
-
 /*GLOBALS*/
 
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: #ffffff; 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
 }
 
 /*WELCOME SCREEN*/
 
 #welcome-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw; 
-    height: 100vh;
-    background: url(../img/loading.png) no-repeat center center;
-    background-size: cover; 
-    
-    z-index: 999;
-    cursor: pointer;
-    transition: transform 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/loading.png) no-repeat center center;
+  background-size: cover;
+
+  z-index: 999;
+  cursor: pointer;
+  transition: transform 0.8s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
 .slide-up {
-    transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 /*navbar*/
 #nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 120px; 
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 120px;
+  z-index: 1000;
 }
 
 .header-container {
-    width: 100%;
-    height: 100%;
-    background: url(../img/header.png) no-repeat center top;
-    background-size: 100% auto; 
-    position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../img/header.png) no-repeat center top;
+  background-size: 100% auto;
+  position: relative;
 }
 
-
 .burger-menu {
-    position: absolute;
-    top: 35px; 
-    right: 20px;
-    width: 30px;
-    height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    pointer-events: auto; 
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .burger-menu span {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #6A7037;
-    border-radius: 2px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #6a7037;
+  border-radius: 2px;
 }
 
 /*Confirmation Screen*/
 
 #confirmation-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw; 
-    height: 100vh; 
-    background: url(../img/confirmation.png) no-repeat center center; /*current placeholder for image*/
-    background-size: cover; 
-    z-index: 999;
-    display: none;
-    font: bold 24px 'Arial', sans-serif;
-    background-color: #6A7037;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/confirmation.png) no-repeat center center; /*current placeholder for image*/
+  background-size: cover;
+  z-index: 999;
+  display: none;
+  font:
+    bold 24px "Arial",
+    sans-serif;
+  background-color: #6a7037;
 }
 
 /* Payment Details */
 #showFormBtn {
-    margin-top: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 20px;
+  margin-top: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
 }
 
 #paymentForm {
-    display: none;
-    margin-top: 20rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
+  display: none;
+  margin-top: 14rem;
+  padding: 0 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
 }
 
-#paymentForm input {
-    width: 200px;
-    padding: 10px;
+#paymentForm input,
+#paymentForm select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-
-
+#CardTypeInput {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+}
