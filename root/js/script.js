@@ -25,6 +25,15 @@ $(document).ready(function() {
 });
 
 
+// home screen in
+$('#welcome-screen').on('click', function() {
+  $(this).addClass('slide-up');
+  
+  // Mostramos el nav superior y la home screen con un delay o fade
+  $('#nav-bar').fadeIn(400);
+  $('#home-screen').fadeIn(400);
+});
+
 // Payment info
 $('#showFormBtn').on('click', function() {
     $('#paymentForm').css('display', 'flex').hide().fadeIn(100);
