@@ -81,3 +81,25 @@ CVVInput.oninput = function () {
 
   this.value = cvv;
 };
+
+
+// Menu 
+
+$('showMenu').on('click', function() {
+    $('#menu').css('display', 'flex').hide().fadeIn(100);
+    $(this).hide();
+});
+
+// About us 
+
+$('showAbout').on('click', function() {
+    $('#about').css('display', 'flex').hide().fadeIn(100);
+    $(this).hide();
+});
+
+// Terms and conditions 
+
+$('showTerms').on('click', function() {
+    $('#terms').css('display', 'flex').hide().fadeIn(100);
+    $(this).hide();
+});
