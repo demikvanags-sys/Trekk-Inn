@@ -315,10 +315,18 @@ h1 {
     text-align: center;
 }
 
+/* Back Arrow */
+
+.back-arrow {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
 /* Menu styles */
 
 #menu {
-  display: none;
+  display: flex;
   margin-top: 10rem;
   padding: 0 40px;
   flex-direction: column;
@@ -328,17 +336,50 @@ h1 {
   gap: 1rem;
 }
 
+.menu1{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.menu1 ol {
+  list-style-type: none;
+  padding-left: 0; 
+}
+
+.menu2 ol {
+  list-style-type: none;
+  padding-left: 0; 
+}
+
+
 /* About styles */
 
 #about {
   display: none;
-  margin-top: 10rem;
-  padding: 0 40px;
+  box-sizing: border-box;
+  padding: 12px;
+  margin-bottom: 12px;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   gap: 1rem;
+}
+
+.about1{
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.about2{
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.about3{
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 /* Terms styles */
