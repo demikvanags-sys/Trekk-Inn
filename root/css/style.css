@@ -249,3 +249,87 @@ html {
   -moz-appearance: none;
   background-color: #fff;
 }
+
+/*Confirmation Screen*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #F4E4B8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+}
+body {
+    padding-top: 120px; /* adjust for image height */
+}
+
+
+.tent
+h1 {
+    color: #333;   
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Confirmation Styles */
+.confirmation-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+
+.confirmation-details {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+
+.confirmation-footer {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Success Message Styles */
+.success-content {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.success-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.Tent-Icon {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tent-icon {
+    display: inline-block;
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+}
