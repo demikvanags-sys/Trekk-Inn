@@ -207,8 +207,7 @@ html {
   background-size: cover;
   z-index: 999;
   display: none;
-  font:
-    bold 24px "Arial",
+  font: bold 24px "Arial",
     sans-serif;
   background-color: #6a7037;
 }

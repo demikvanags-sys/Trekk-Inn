@@ -8,118 +8,139 @@
     <script src="js/script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
-
   <body>
     <!--WELCOME SCREEN-->
     <section>
       <div id="welcome-screen"></div>
     </section>
-
     <!--NAV BAR-->
     <section>
-  <nav id="nav-bar" style="display: none">
-    <div class="header-container">
-      
-      <div class="burger-menu" id="open-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <nav id="nav-bar" style="display: none">
+        <div class="header-container">
+          <div class="burger-menu" id="open-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="nav-logo-container">
+            <img src="img/Logo text.png" alt="Trekk Inn" class="nav-logo-img" />
+          </div>
+          <div class="nav-right-space"></div>
+        </div>
+      </nav>
+    </section>
+    <!--HOME-SECTION-->
+    <section id="home-screen" style="display: none">
+      <div class="home-scroll-container">
+        <div class="category-section">
+          <h2 class="category-title">Solo Camping</h2>
+          <div class="horizontal-carousel">
+            <div class="carousel-item">
+              <img src="img/1p tent 1.png" alt="Solo 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/1p tent 2.png" alt="Solo 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/1p tent 3.png" alt="Solo 3" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/1p tent 4.png" alt="Solo 4" />
+            </div>
+          </div>
+        </div>
+        <div class="category-section">
+          <h2 class="category-title">Duo Camping</h2>
+          <div class="horizontal-carousel">
+            <div class="carousel-item">
+              <img src="img/2p tent 1.png" alt="Duo 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/2p tent 2.png" alt="Duo 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/2p tent 3.png" alt="Duo 3" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/2p tent 5.png" alt="Duo 4" />
+            </div>
+          </div>
+        </div>
+        <div class="category-section">
+          <h2 class="category-title">3-4 Person Tents</h2>
+          <div class="horizontal-carousel">
+            <div class="carousel-item">
+              <img src="img/3p tent 1.png" alt="Tent 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/3p tent 2.png" alt="Tent 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/3p tent 3.png" alt="Tent 3" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/4p tent 3.png" alt="Tent 4" />
+            </div>
+          </div>
+        </div>
+        <div class="category-section">
+          <h2 class="category-title">Larger Parties</h2>
+          <div class="horizontal-carousel">
+            <div class="carousel-item">
+              <img src="img/5p tent 1.png" alt="Large 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/5p tent 2.png" alt="Large 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/7p tent 1.png" alt="Large 3" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/6p tent 1.png" alt="Large 4" />
+            </div>
+          </div>
+        </div>
+        <div class="category-section">
+          <h2 class="category-title">Extreme Weather</h2>
+          <div class="horizontal-carousel">
+            <div class="carousel-item">
+              <img src="img/extreme tent 1.png" alt="Extreme 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/extreme tent 3.png" alt="Extreme 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/extreme tent 4.png" alt="Extreme 3" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/extreme tent 5.png" alt="Extreme 4" />
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="nav-logo-container">
-        <img src="img/Logo text.png" alt="Trekk Inn" class="nav-logo-img">
-      </div>
-      
-      <div class="nav-right-space"></div>
-
-    </div>
-  </nav>
-</section>
-    
-
-<!--HOME-SECTION-->
-   <section id="home-screen" style="display: none;">
-  <div class="home-scroll-container">
-    
-    
-
-    <div class="category-section">
-      <h2 class="category-title">Solo Camping</h2>
-      <div class="horizontal-carousel">
-        <div class="carousel-item"><img src="img/1p tent 1.png" alt="Solo 1"></div>
-        <div class="carousel-item"><img src="img/1p tent 2.png" alt="Solo 2"></div>
-        <div class="carousel-item"><img src="img/1p tent 3.png" alt="Solo 3"></div>
-        <div class="carousel-item"><img src="img/1p tent 4.png" alt="Solo 4"></div>
-      </div>
-    </div>
-
-    <div class="category-section">
-      <h2 class="category-title">Duo Camping</h2>
-      <div class="horizontal-carousel">
-        <div class="carousel-item"><img src="img/2p tent 1.png" alt="Duo 1"></div>
-        <div class="carousel-item"><img src="img/2p tent 2.png" alt="Duo 2"></div>
-        <div class="carousel-item"><img src="img/2p tent 3.png" alt="Duo 3"></div>
-        <div class="carousel-item"><img src="img/2p tent 5.png" alt="Duo 4"></div>
-      </div>
-    </div>
-
-    <div class="category-section">
-      <h2 class="category-title">3-4 Person Tents</h2>
-      <div class="horizontal-carousel">
-        <div class="carousel-item"><img src="img/3p tent 1.png" alt="Tent 1"></div>
-        <div class="carousel-item"><img src="img/3p tent 2.png" alt="Tent 2"></div>
-        <div class="carousel-item"><img src="img/3p tent 3.png" alt="Tent 3"></div>
-        <div class="carousel-item"><img src="img/4p tent 3.png" alt="Tent 4"></div>
-      </div>
-    </div>
-
-    <div class="category-section">
-      <h2 class="category-title">Larger Parties</h2>
-      <div class="horizontal-carousel">
-        <div class="carousel-item"><img src="img/5p tent 1.png" alt="Large 1"></div>
-        <div class="carousel-item"><img src="img/5p tent 2.png" alt="Large 2"></div>
-        <div class="carousel-item"><img src="img/7p tent 1.png" alt="Large 3"></div>
-        <div class="carousel-item"><img src="img/6p tent 1.png" alt="Large 4"></div>
-      </div>
-    </div>
-
-    <div class="category-section">
-      <h2 class="category-title">Extreme Weather</h2>
-      <div class="horizontal-carousel">
-        <div class="carousel-item"><img src="img/extreme tent 1.png" alt="Extreme 1"></div>
-        <div class="carousel-item"><img src="img/extreme tent 3.png" alt="Extreme 2"></div>
-        <div class="carousel-item"><img src="img/extreme tent 4.png" alt="Extreme 3"></div>
-        <div class="carousel-item"><img src="img/extreme tent 5.png" alt="Extreme 4"></div>
-      </div>
-    </div>
-
-  </div>
-<!--BOTTOM-NAVBAR-->
-<div class="bottom-nav">
-    <div class="nav-button active">
-      <img src="img/home.png" alt="Home">
-    </div>
-    <div class="nav-button">
-      <img src="img/shop.png" alt="Cart">
-    </div>
-  </div>
-  
-</section>
-
+    </section>
     <!--PRODUCT PAGE-->
     <section></section>
-
     <!--PRODUCT PAYMENT-->
-    <section>  <button id="showPaymentBtn">TEST CARD DETAILS</button></section>
-
+    <section><button id="showPaymentBtn">TEST CARD DETAILS</button></section>
     <!--CARD DETAILS-->
     <section>
       <button id="showFormBtn">Continue to Payment TEST</button>
-
       <form id="paymentForm">
-        <input id="emailInput" name="Email" type="email" placeholder="Email Address" required/>
-        <input id="nameInput" name="Name" type="text" placeholder="Full name on the card" required/>
-
+        <input
+          id="emailInput"
+          name="Email"
+          type="email"
+          placeholder="Email Address"
+          required
+        />
+        <input
+          id="nameInput"
+          name="Name"
+          type="text"
+          placeholder="Full name on the card"
+          required
+        />
         <select id="CardTypeInput" name="CardType" required>
           <option value="" disabled selected>Select Card Type</option>
           <option value="Visa">Visa</option>
@@ -127,15 +148,30 @@
           <option value="American Express">American Express</option>
           <option value="Discover">Discover</option>
         </select>
-
-        <input id="CardNumberInput" type="text" placeholder="Card Number" maxlength="19 "required/>
-        <input id="ExpiryInput" type="text" placeholder="MM/YY" maxlength="5" required />
-        <input id="CVVInput" type="text" placeholder="CVV" maxlength="3" required />
-
+        <input
+          id="CardNumberInput"
+          type="text"
+          placeholder="Card Number"
+          maxlength="19 "
+          required
+        />
+        <input
+          id="ExpiryInput"
+          type="text"
+          placeholder="MM/YY"
+          maxlength="5"
+          required
+        />
+        <input
+          id="CVVInput"
+          type="text"
+          placeholder="CVV"
+          maxlength="3"
+          required
+        />
         <input class="submitBtn" type="submit" />
       </form>
     </section>
-
     <!--CONFIRMATION-->
     <section>
       <div class="confirmation-screen">
@@ -145,20 +181,13 @@
         <h2>YOU ARE ALL SORTED!</h2>
       </div>
     </section>
-
     <!--MENU-->
     <section id="menu">
       <div class="menu-screen">
       <li><a href="#about" style="color: black;"><u>Rent the tent, owe the experience</u></a></li>
       <li><a href="#terms" style="color: black;"><u>Terms And Conditions</u></a></li>
       </div>
-      <div
-      <li><p>Email:Trekk-Inn-2026@gmail.com</p></li>
-      <li><p>Address: Aberdeen, AB000BB,flatR</p></li>
-      <li><p>All rights reserved</p></li>
-    </div>
     </section>
-
     <!--ABOUT US-->
     <section id="about">
       <a href="#about" style="color: black;"><u>Rent the tent, owe the experience</u></a>
@@ -183,10 +212,9 @@
         equipment.</p>
         </div>
       <div class="about3">
-        <p><b>Go and conquer the outer wilds!<br>The Trekk-Inn team</br></b></p>
+        <p><b>Go and conquer the outer wilds!<br>The Trekk-Inn team</b></p>
       </div>
     </section>
-
     <!--TERMS AND CONDITIONS-->
 
     <section>
@@ -199,19 +227,32 @@
       </p>
       </div>
       <div class="terms2">
-      
-      <p>Making the 
-        outdoors <b>accessible 
-        to all,</b> allowing our 
-        community to focus
-        on the experience of
-        the trip rather than
-        the logistics of the 
-        equipment.</p>
+        <ul>
+          <li><b>Property Care:</b> Guests are responsible 
+          for keeping the tent
+          and its surroundings in the same
+          condition as they found it.
+          </li>
+        </ul>
+        <ul>
+          <li><b>Nature Hazards:</b> You
+            acknowledge that you are staying
+            in an outdoor environment. The
+            platform and hosts are not liable
+            for any encounters with local wildlife,
+            insects, or natural terrain hazards.
+          </li>
+        </ul>
+        <ul>
+          <li><b>Security Deposit:</b> Hosts may
+            require a damage deposit, which
+            will be fully refunded if no
+            damage or loss of equipment
+            occurs.
+          </li>
+        </ul>
         </div>
-      <div class="about3">
-        <li><p><b>Go and conquer the outer wilds!<br>The Trekk-Inn team</br></b></p></li>
-      </div>
+
 
     </section>
 
