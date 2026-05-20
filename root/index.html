@@ -1,95 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trekk-Inn</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
+  </head>
 
-<body>
-<!--WELCOME SCREEN-->
-<section>
-    <div id="welcome-screen"></div>
+  <body>
+    <!--WELCOME SCREEN-->
+    <section>
+      <div id="welcome-screen"></div>
+    </section>
 
+    <!--NAV BAR-->
+    <section>
+  <nav id="nav-bar" style="display: none">
+    <div class="header-container">
+      
+      <div class="burger-menu" id="open-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-logo-container">
+        <img src="img/Logo text.png" alt="Trekk Inn" class="nav-logo-img">
+      </div>
+      
+      <div class="nav-right-space"></div>
+
+    </div>
+  </nav>
+</section>
+    
+
+<!--HOME-SECTION-->
+   <section id="home-screen" style="display: none;">
+  <div class="home-scroll-container">
+    
+    
+
+    <div class="category-section">
+      <h2 class="category-title">Solo Camping</h2>
+      <div class="horizontal-carousel">
+        <div class="carousel-item"><img src="img/1p tent 1.png" alt="Solo 1"></div>
+        <div class="carousel-item"><img src="img/1p tent 2.png" alt="Solo 2"></div>
+        <div class="carousel-item"><img src="img/1p tent 3.png" alt="Solo 3"></div>
+        <div class="carousel-item"><img src="img/1p tent 4.png" alt="Solo 4"></div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <h2 class="category-title">Duo Camping</h2>
+      <div class="horizontal-carousel">
+        <div class="carousel-item"><img src="img/2p tent 1.png" alt="Duo 1"></div>
+        <div class="carousel-item"><img src="img/2p tent 2.png" alt="Duo 2"></div>
+        <div class="carousel-item"><img src="img/2p tent 3.png" alt="Duo 3"></div>
+        <div class="carousel-item"><img src="img/2p tent 5.png" alt="Duo 4"></div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <h2 class="category-title">3-4 Person Tents</h2>
+      <div class="horizontal-carousel">
+        <div class="carousel-item"><img src="img/3p tent 1.png" alt="Tent 1"></div>
+        <div class="carousel-item"><img src="img/3p tent 2.png" alt="Tent 2"></div>
+        <div class="carousel-item"><img src="img/3p tent 3.png" alt="Tent 3"></div>
+        <div class="carousel-item"><img src="img/4p tent 3.png" alt="Tent 4"></div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <h2 class="category-title">Larger Parties</h2>
+      <div class="horizontal-carousel">
+        <div class="carousel-item"><img src="img/5p tent 1.png" alt="Large 1"></div>
+        <div class="carousel-item"><img src="img/5p tent 2.png" alt="Large 2"></div>
+        <div class="carousel-item"><img src="img/7p tent 1.png" alt="Large 3"></div>
+        <div class="carousel-item"><img src="img/6p tent 1.png" alt="Large 4"></div>
+      </div>
+    </div>
+
+    <div class="category-section">
+      <h2 class="category-title">Extreme Weather</h2>
+      <div class="horizontal-carousel">
+        <div class="carousel-item"><img src="img/extreme tent 1.png" alt="Extreme 1"></div>
+        <div class="carousel-item"><img src="img/extreme tent 3.png" alt="Extreme 2"></div>
+        <div class="carousel-item"><img src="img/extreme tent 4.png" alt="Extreme 3"></div>
+        <div class="carousel-item"><img src="img/extreme tent 5.png" alt="Extreme 4"></div>
+      </div>
+    </div>
+
+  </div>
+<!--BOTTOM-NAVBAR-->
+<div class="bottom-nav">
+    <div class="nav-button active">
+      <img src="img/home.png" alt="Home">
+    </div>
+    <div class="nav-button">
+      <img src="img/shop.png" alt="Cart">
+    </div>
+  </div>
+  
 </section>
 
-<!--NAV BAR-->
-<section>
-    <nav id="nav-bar" style="display: none;">
-        <div class="header-container">
-            <div class="burger-menu" id="open-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <!--PRODUCT PAGE-->
+    <section></section>
 
-</section>
+    <!--PRODUCT PAYMENT-->
+    <section>  <button id="showPaymentBtn">TEST CARD DETAILS</button></section>
 
-<!--HOME-->
-<section>
-    <button id="showPaymentBtn">TEST CARD DETAILS</button>
-</section>
+    <!--CARD DETAILS-->
+    <section>
+      <button id="showFormBtn">Continue to Payment TEST</button>
 
-<!--PRODUCT PAGE-->
-<section>
+      <form id="paymentForm">
+        <input id="emailInput" name="Email" type="email" placeholder="Email Address" required/>
+        <input id="nameInput" name="Name" type="text" placeholder="Full name on the card" required/>
 
-</section>
+        <select id="CardTypeInput" name="CardType" required>
+          <option value="" disabled selected>Select Card Type</option>
+          <option value="Visa">Visa</option>
+          <option value="MasterCard">MasterCard</option>
+          <option value="American Express">American Express</option>
+          <option value="Discover">Discover</option>
+        </select>
 
-<!--PRODUCT PAYMENT-->
-<section>
+        <input id="CardNumberInput" type="text" placeholder="Card Number" maxlength="19 "required/>
+        <input id="ExpiryInput" type="text" placeholder="MM/YY" maxlength="5" required />
+        <input id="CVVInput" type="text" placeholder="CVV" maxlength="3" required />
 
-</section>
+        <input class="submitBtn" type="submit" />
+      </form>
+    </section>
 
-<!--CARD DETAILS-->
-<section>
-    <button id="showFormBtn">Continue to Payment TEST</button>
+    <!--CONFIRMATION-->
+    <section>
+      <div class="confirmation-screen">
+        <div class="confirmation-text"></div>
+        <span class="label">Order ID:""</span>
+        <span class="value">#123456789</span>
+        <h2>YOU ARE ALL SORTED!</h2>
+      </div>
+    </section>
 
-        <form id="paymentForm">
+    <!--MENU-->
+    <section></section>
 
-            <input id="emailInput" name="Email" type="email" placeholder="Email Address" required>
-            <input id="nameInput" name="Name" type="text" placeholder="Full name on the card" required>
-            <input id="CardTypeInput" name="Name" type="text" placeholder="Card Type" required>
-            <input id="CardNumberInput" type="text" placeholder="Card Number" required>
-            <input id="ExpiryInput" type="text" placeholder="MM/YY" required>
-            <input id="CVVInput" type="text" placeholder="CVV" required>
+    <!--ABOUT US-->
+    <section></section>
 
-            <input class="submitBtn" type="submit">
+    <!--TERMS AND CONDITIONS-->
 
-    </form>
+    <section></section>
 
-</section>
-
-<!--CONFIRMATION-->
-<section>
-
-</section>
-
-<!--MENU-->
-<section>
-
-</section>
-
-<!--ABOUT US-->
-<section>
-
-</section>
-
-<!--TERMS AND CONDITIONS-->
-
-<section>
-
-</section>
-
-<!--FOOTER-->
-<section>
-
-</section>
-
-</body>
+    <!--FOOTER-->
+    <section></section>
+  </body>
 </html>
-

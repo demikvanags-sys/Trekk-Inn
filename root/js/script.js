@@ -25,8 +25,59 @@ $(document).ready(function() {
 });
 
 
+// home screen in
+$('#welcome-screen').on('click', function() {
+  $(this).addClass('slide-up');
+  
+  // Mostramos el nav superior y la home screen con un delay o fade
+  $('#nav-bar').fadeIn(400);
+  $('#home-screen').fadeIn(400);
+});
+
 // Payment info
 $('#showFormBtn').on('click', function() {
     $('#paymentForm').css('display', 'flex').hide().fadeIn(100);
     $(this).hide();
 });
+
+// Card number validation
+CardNumberInput.oninput = function () {
+
+  let number = this.value.replace(/\D/g, "");
+
+  if (number.length > 4) {
+    number = number.slice(0, 4) + " " + number.slice(4);
+  }
+
+  if (number.length > 9) {
+    number = number.slice(0, 9) + " " + number.slice(9);
+  }
+
+  if (number.length > 14) {
+    number = number.slice(0, 14) + " " + number.slice(14);
+  }
+
+  this.value = number;
+};
+
+
+// Expiry date validation
+ExpiryInput.oninput = function () {
+
+  let date = this.value.replace(/\D/g, "");
+
+  if (date.length > 2) {
+    date = date.slice(0, 2) + "/" + date.slice(2);
+  }
+
+  this.value = date;
+};
+
+
+// CVV validation
+CVVInput.oninput = function () {
+
+  let cvv = this.value.replace(/\D/g, "");
+
+  this.value = cvv;
+};
