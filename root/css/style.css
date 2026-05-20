@@ -315,6 +315,45 @@ h1 {
     text-align: center;
 }
 
+/* Menu styles */
+
+#menu {
+  display: none;
+  margin-top: 10rem;
+  padding: 0 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+/* About styles */
+
+#about {
+  display: none;
+  margin-top: 10rem;
+  padding: 0 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+/* Terms styles */
+
+#terms {
+  display: none;
+  margin-top: 10rem;
+  padding: 0 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
 /* Confirmation Styles */
 .confirmation-header {
     text-align: center;
