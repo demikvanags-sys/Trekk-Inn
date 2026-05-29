@@ -56,16 +56,11 @@ html {
 
 /*BURGER-MENU*/
 
-.burger-menu {
-  width: 28px;
-  height: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
+#burger-button{
   background-color: transparent;
   border: none;
 }
+
 
 .burger-menu span {
   display: block;
@@ -98,6 +93,7 @@ html {
 /*HOME-SCREEN*/
 
 #home-screen {
+  display: flex;
   position: fixed;
   top: 0; 
   left: 0;
@@ -216,11 +212,8 @@ html {
 
 /* Payment Details */
 #showFormBtn {
-  margin-top: 125px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 20px;
+  margin-top: 20rem;
 }
 
 .card-header {
@@ -374,6 +367,12 @@ h1 {
 }
 
 /* Menu styles */
+
+#menu-back {
+  background-color: transparent;
+  border: none;
+  align-items: right
+}
 
 #menu {
   display: none;

@@ -25,6 +25,8 @@ $(document).ready(function() {
 });
 
 
+
+
 // home screen in
 $('#welcome-screen').on('click', function() {
   $(this).addClass('slide-up');
@@ -85,10 +87,14 @@ CVVInput.oninput = function () {
 
 // Menu 
 
-$('showMenu').on('click', function() {
-    $('#menu').css('display', 'flex').hide().fadeIn(100);
-    $(this).hide();
+$('#burger-button').on('click', function() {
+  $(this).hide();
+
+  $('#home-screen, #paymentForm, #confirmation-screen').hide();
+  
+  $('#menu').css({ 'display': 'flex', 'opacity': 100 });
 });
+
 
 // About us 
 
