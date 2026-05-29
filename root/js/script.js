@@ -92,7 +92,7 @@ $('#burger-button').on('click', function() {
 
   $('#home-screen, #paymentForm, #confirmation-screen').hide();
   
-  $('#menu').css({ 'display': 'flex', 'opacity': 100 });
+  $('#menu, #menu-back').css({ 'display': 'flex', 'opacity': 100 });
 });
 
 

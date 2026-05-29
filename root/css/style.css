@@ -88,6 +88,12 @@ html {
   width: 28px;
 }
 
+#menu-back {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
 
 
 /*HOME-SCREEN*/
@@ -376,13 +382,12 @@ h1 {
 
 #menu {
   display: none;
-  margin-top: 10rem;
-  padding: 0 40px;
+  margin-top: 8rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: left;
-  gap: 1rem;
+  width: 100%;
 }
 
 .menu1{
