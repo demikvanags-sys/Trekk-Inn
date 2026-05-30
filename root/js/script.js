@@ -96,6 +96,19 @@ $('#burger-button').on('click', function() {
 });
 
 
+//Product Page
+$('.carousel-item').on('click', function() {
+  imgSelectStore = $(this).find('img').attr('src');
+  $('#product-dynamic-img').attr('src', imgSelectStore);
+    var titleCategory = $(this).closest('.category-section').find('.category-title').text();
+  $('#product-page .back-category-title').text(titleCategory);
+  $('#nav-bar').show();
+  $('.bottom-nav').css('display', 'flex');
+  $('#home-screen').fadeOut(200, function() {
+  $('#product-page').fadeIn(300);
+    });
+  });
+
 // About us 
 
 $('showAbout').on('click', function() {
