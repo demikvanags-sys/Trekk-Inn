@@ -96,6 +96,18 @@ $('#burger-button').on('click', function() {
 });
 
 
+//Product Page
+$('.carousel-item').on('click', function() {
+    selectedTentImage = $(this).find('img').attr('src');
+    $('#product-dynamic-img').attr('src', selectedTentImage);
+    var categoryTitle = $(this).closest('.category-section').find('.category-title').text();
+    $('#product-page .back-category-title').text(categoryTitle);
+    $('#nav-bar').show();
+    $('.bottom-nav').css('display', 'flex');
+    $('#home-screen').fadeOut(200, function() {
+        $('#product-page').fadeIn(300);
+    });
+});
 // About us 
 
 $('#About').on('click', function() {
@@ -112,4 +124,41 @@ $('#About').on('click', function() {
 $('showTerms').on('click', function() {
     $('#terms').css('display', 'flex').hide().fadeIn(100);
     $(this).hide();
+});
+
+//Confirmation screen 
+
+
+    // Show confirmation
+    displayConfirmation();
+
+// Confirm booking
+function confirmBooking() {
+    // Generate booking ID
+    const bookingId = 'BK' + Date.now().toString().slice(-8);
+    
+    document.getElementById('bookingId').textContent = bookingId;
+    document.getElementById('confirmationScreen').classList.remove('active');
+    document.getElementById('successMessage').classList.add('active');
+    
+}
+
+// Nav button click behavior
+document.addEventListener('DOMContentLoaded', () => {
+    const navButtons = document.querySelectorAll('.bottom-nav .nav-button');
+    navButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            navButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const action = button.dataset.action;
+            if (action === 'home') {
+                window.location.href = 'index.html';
+            } else if (action === 'cart') {
+                window.location.href = 'product-page.html';
+            } else {
+                console.log('Nav button clicked:', action);
+            }
+        });
+    });
 });
