@@ -193,9 +193,12 @@ $('#about-link').on('click', function() {
 
 // Terms and conditions 
 
-$('#showTerms').on('click', function() {
-    $('#terms').css('display', 'flex').hide().fadeIn(100);
-    $(this).hide();
+$('#terms-link').on('click', function() {
+  $(this).hide();
+  
+  $('#home-screen, #paymentForm, #confirmation-screen, #menu, #about').hide();
+  
+  $('#terms, #menu-back').css({ 'display': 'flex', 'opacity': 1 });
 });
 
 
