@@ -85,16 +85,6 @@ CVVInput.oninput = function () {
 };
 
 
-// Menu 
-
-$('#burger-button').on('click', function() {
-  $(this).hide();
-
-  $('#home-screen, #paymentForm, #confirmation-screen').hide();
-  
-  $('#menu, #menu-back').css({ 'display': 'flex', 'opacity': 100 });
-});
-
 
 //Product Page
 $('.carousel-item').on('click', function() {
@@ -108,6 +98,21 @@ $('.carousel-item').on('click', function() {
         $('#product-page').fadeIn(300);
     });
 });
+
+// Menu 
+
+$('#burger-button').on('click', function() {
+  $(this).hide();
+
+  $('#home-screen, #paymentForm, #confirmation-screen').hide();
+  
+  $('#menu, #menu-back').css({ 'display': 'flex', 'opacity': 100 });
+});
+
+$('#menu-back').on('click', function() {
+    location.reload();
+});
+
 // About us 
 
 $('#About').on('click', function() {
