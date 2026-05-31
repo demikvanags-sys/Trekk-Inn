@@ -168,24 +168,52 @@ $('.add-to-cart-btn').on('click', function() {
 
 // Menu 
 
-$('#burger-button').on('click', function() {
-  $(this).hide();
+let lastOpenPage = '#home-screen';
 
-  $('#home-screen, #paymentForm, #confirmation-screen').hide();
-  
-  $('#menu, #menu-back, #about-link, #terms-link').css({ 'display': 'flex', 'opacity': 100 });
+$('#burger-button').on('click', function() {
+
+    if ($('#product-page').is(':visible')) {
+        lastOpenPage = '#product-page';
+    }
+    else if ($('#checkout-page').is(':visible')) {
+        lastOpenPage = '#checkout-page';
+    }
+    else {
+        lastOpenPage = '#home-screen';
+    }
+
+    $(this).hide();
+
+    $(lastOpenPage).hide();
+
+    $('#menu').css({
+        'display': 'flex',
+        'opacity': 1
+    });
+
+    $('#menu-back').css('display', 'block');
+
 });
 
 $('#menu-back').on('click', function() {
-    location.reload();
+
+    $('#menu').fadeOut(200);
+    $('#about').fadeOut(200);
+    $('#terms').fadeOut(200);
+
+    $('#menu-back').hide();
+
+    $('#burger-button').show();
+
+    $(lastOpenPage).fadeIn(300);
+
 });
 
 // About us 
 
 $('#about-link').on('click', function() {
-  $(this).hide();
   
-  $('#home-screen, #paymentForm, #confirmation-screen, #menu, #about-link').hide();
+  $('#home-screen, #paymentForm, #confirmation-screen, #menu').hide();
   
   $('#about, #menu-back').css({ 'display': 'flex', 'opacity': 1 });
   
@@ -194,23 +222,11 @@ $('#about-link').on('click', function() {
 // Terms and conditions 
 
 $('#terms-link').on('click', function() {
-  $(this).hide();
   
   $('#home-screen, #paymentForm, #confirmation-screen, #menu, #about').hide();
   
   $('#terms, #menu-back').css({ 'display': 'flex', 'opacity': 1 });
 });
-
-// back arrow
-
-$('#back-arrow').on('click', function() {
-  $(this).hide();
-
-  $('#home-screen, #paymentForm, #confirmation-screen, #terms, #about').hide();
-  
-  $('#menu, #menu-back, #about-link').css({ 'display': 'flex', 'opacity': 1 });
-});
-
 
 
 // Confirm booking
@@ -234,4 +250,26 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = 'product-page.html'; //click home button, go to product page
     });
   }
+});
+
+// About back button
+$('#about-back-btn').on('click', function() {
+
+    $('#about').fadeOut(200, function() {
+
+        $('#menu').fadeIn(300);
+
+    });
+
+});
+
+// Terms back button
+$('#terms-back-btn').on('click', function() {
+
+    $('#terms').fadeOut(200, function() {
+
+        $('#menu').fadeIn(300);
+
+    });
+
 });
