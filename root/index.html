@@ -117,18 +117,18 @@
         </div>
       </div>
     </section>
+
+
     <!--PRODUCT PAGE-->
 <section id="space">
-
 </section>
 
-    <!--PRODUCT PAGE-->
-<section id="product-page">
-
-    <div class="product-scroll-container">
+<section id="product-page" style="display: none;">
+      <div class="product-scroll-container">
+        
         <div class="back-row" id="back-to-home">
-                <span class="back-arrow"><</span>
-                <span class="back-category-title">Solo Camping</span>
+          <span class="back-arrow">&#10094;</span>
+          <span class="back-category-title">Solo Camping</span>
         </div>
         <div class="product-main-img-box">
             <img src="img/1p tent 1.png" alt="selected tent" id="product-dynamic-img">
@@ -173,7 +173,43 @@
     </div>
 </section>
     <!--PRODUCT PAYMENT-->
-  
+  <section id="checkout-page" style="display: none;">
+      <div class="checkout-scroll-container">
+        
+        <div class="back-row" id="back-to-product">
+          <span class="back-arrow">&#10094;</span>
+          <span class="back-category-title">Check Out</span>
+        </div>
+        
+        <div class="product-main-img-box">
+          <img src="img/1p tent 1.png" alt="Checkout Tent" id="checkout-dynamic-img">
+        </div>
+        
+        <div class="checkout-form-container">
+          <div class="date-picker-group">
+            <div class="date-field">
+              <label for="date-from">From</label>
+              <input type="text" id="date-from" placeholder="dd/mm/yy">
+          </div>
+          
+            <div class="date-field">
+              <label for="date-to">To</label>
+              <input type="text" id="date-to" placeholder="dd/mm/yy">
+            </div>
+          </div>
+        </div>
+        
+        <div class="payment-buttons-box">
+          <button class="pay-btn gpay-btn">GPay</button>
+          <button class="pay-btn card-btn">
+            <img src="img/card-icon.png" alt="" class="card-icon-img" style="display:none;"> 
+            PAY BY CARD
+          </button>
+        </div>
+      </div>
+  </section>
+
+
     <!--CARD DETAILS-->
     <section>
       <!-- <button id="showFormBtn">Continue to Payment TEST</button> -->
