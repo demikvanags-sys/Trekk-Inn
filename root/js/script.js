@@ -107,13 +107,6 @@ $('#back-to-home').on('click', function() {
         });
     });
 
-
-//payment page
-
-$('#checkout-page').fadeOut(200, function() {
-    $('#ca').fadeIn(300);
-});
-
 //checkout page
 $('.add-to-cart-btn').on('click', function() {
         if (selectedTentImage !== "") {
@@ -131,29 +124,28 @@ $('.add-to-cart-btn').on('click', function() {
         });
     });
 
-$('.card-btn').on('click', function(e) {
-        e.preventDefault();
-        $('#card-page .back-category-title').text('Card Details');
-        $('#checkout-page').fadeOut(200, function() {
-            $('#card-page').fadeIn(300);
-        });
-    });
+// Menu 
 
-    $('#back-to-checkout').on('click', function() {
-        $('#card-page').fadeOut(200, function() {
-            $('#checkout-page').fadeIn(300);
-        });
-    });
+$('#burger-button').on('click', function() {
+  $(this).hide();
 
+  $('#home-screen, #paymentForm, #confirmation-screen').hide();
+  
+  $('#menu, #menu-back').css({ 'display': 'flex', 'opacity': 100 });
+});
+
+$('#menu-back').on('click', function() {
+    location.reload();
+});
 
 // About us 
 
-$('#About').on('click', function() {
+$('#about-link').on('click', function() {
   $(this).hide();
+  
   $('#home-screen, #paymentForm, #confirmation-screen, #menu').hide();
   
-  $('#menu,').css({ 'display': 'none', 'opacity': 0 });
-  $('#about, #menu-back').css({ 'display': 'flex', 'opacity': 100 });
+  $('#about, #menu-back').css({ 'display': 'flex', 'opacity': 1 });
   
 });
 
@@ -182,21 +174,13 @@ function confirmBooking() {
 }
 
 // Nav button click behavior
-document.addEventListener('DOMContentLoaded', () => {
-    const navButtons = document.querySelectorAll('.bottom-nav .nav-button');
-    navButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            navButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
 
-            const action = button.dataset.action;
-            if (action === 'home') {
-                window.location.href = 'index.html';
-            } else if (action === 'cart') {
-                window.location.href = 'product-page.html';
-            } else {
-                console.log('Nav button clicked:', action);
-            }
-        });
+document.addEventListener('DOMContentLoaded', () => {
+  const homeBtn = document.getElementById('homeBtn');
+
+  if (homeBtn) {
+    homeBtn.addEventListener('click', () => {
+      window.location.href = 'product-page.html'; //click home button, go to product page
     });
+  }
 });
