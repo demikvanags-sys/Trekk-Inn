@@ -108,6 +108,12 @@ $('#back-to-home').on('click', function() {
     });
 
 
+//payment page
+
+$('#checkout-page').fadeOut(200, function() {
+    $('#ca').fadeIn(300);
+});
+
 //checkout page
 $('.add-to-cart-btn').on('click', function() {
         if (selectedTentImage !== "") {
@@ -122,6 +128,20 @@ $('.add-to-cart-btn').on('click', function() {
     $('#back-to-product').on('click', function() {
         $('#checkout-page').fadeOut(200, function() {
             $('#product-page').fadeIn(300);
+        });
+    });
+
+$('.card-btn').on('click', function(e) {
+        e.preventDefault();
+        $('#card-page .back-category-title').text('Card Details');
+        $('#checkout-page').fadeOut(200, function() {
+            $('#card-page').fadeIn(300);
+        });
+    });
+
+    $('#back-to-checkout').on('click', function() {
+        $('#card-page').fadeOut(200, function() {
+            $('#checkout-page').fadeIn(300);
         });
     });
 

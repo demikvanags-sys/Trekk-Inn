@@ -467,7 +467,9 @@ html {
   display: inline-block;
 }
 
-
+#checkout-page, #card-page {
+    display: none;
+}
 
 /*Confirmation Screen*/
 
