@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trekk-Inn</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <!--WELCOME SCREEN-->
@@ -201,7 +201,7 @@
         
         <div class="payment-buttons-box">
           <button class="pay-btn gpay-btn">GPay</button>
-          <button class="pay-btn card-btn">
+          <button class="showFormBtn">
             <img src="img/card-icon.png" alt="" class="card-icon-img" style="display:none;"> 
             PAY BY CARD
           </button>
@@ -263,11 +263,18 @@
         <input class="submitBtn" type="submit" />
       </form>
     </section>
-    <!--CONFIRMATION-->
-    <section>
-      <div class="confirmation-screen">
-
+<!--SUCCESS-SCREEN-->
+ <section>
+  <div id="success-page" class="success-drop-screen">
+      <button id="close-success" class="close-success-btn">&times;</button>
+      
+      <div class="success-layout-container">
+        <img src="img/comfirmation.png" alt="Order Sorted" class="success-fullscreen-img">
       </div>
+    </div>
+
+
+ </section>
     
     <!--BOTTOM-NAVBAR for confirmation page-->
     <div class="bottom-nav">
@@ -284,8 +291,8 @@
       
       <div class="menu1">
       <ol>
-      <li><a href="about" style="color: black;"><u>Rent the tent, owe the experience</u></a></li>
-      <li><a href="terms" style="color: black;"><u>Terms And Conditions</u></a></li>
+      <li><a href="#" id="About" style="color: black;"><u>Rent the tent, owe the experience</u></a></li>
+      <li><a href="#" id="showTerms" style="color: black;"><u>Terms And Conditions</u></a></li>
       </ol>
       </div>
       <div class="menu2">
