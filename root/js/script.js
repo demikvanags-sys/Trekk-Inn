@@ -106,7 +106,7 @@ $('#burger-button').on('click', function() {
 
   $('#home-screen, #paymentForm, #confirmation-screen').hide();
   
-  $('#menu, #menu-back').css({ 'display': 'flex', 'opacity': 100 });
+  $('#menu, #menu-back').css({ 'display': 'flex', 'opacity': 1 });
 });
 
 $('#menu-back').on('click', function() {
@@ -115,12 +115,12 @@ $('#menu-back').on('click', function() {
 
 // About us 
 
-$('#About').on('click', function() {
+$('#about-link').on('click', function() {
   $(this).hide();
+  
   $('#home-screen, #paymentForm, #confirmation-screen, #menu').hide();
   
-  $('#menu,').css({ 'display': 'none', 'opacity': 0 });
-  $('#about, #menu-back').css({ 'display': 'flex', 'opacity': 100 });
+  $('#about, #menu-back').css({ 'display': 'flex', 'opacity': 1 });
   
 });
 
