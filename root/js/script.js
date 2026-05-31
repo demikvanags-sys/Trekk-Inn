@@ -85,16 +85,6 @@ CVVInput.oninput = function () {
 };
 
 
-// Menu 
-
-$('#burger-button').on('click', function() {
-  $(this).hide();
-
-  $('#home-screen, #paymentForm, #confirmation-screen').hide();
-  
-  $('#menu, #menu-back').css({ 'display': 'flex', 'opacity': 100 });
-});
-
 
 //Product Page
 $('.carousel-item').on('click', function() {
@@ -138,9 +128,13 @@ $('.add-to-cart-btn').on('click', function() {
 
 // About us 
 
-$('showAbout').on('click', function() {
-    $('#about').css('display', 'flex').hide().fadeIn(100);
-    $(this).hide();
+$('#About').on('click', function() {
+  $(this).hide();
+  $('#home-screen, #paymentForm, #confirmation-screen, #menu').hide();
+  
+  $('#menu,').css({ 'display': 'none', 'opacity': 0 });
+  $('#about, #menu-back').css({ 'display': 'flex', 'opacity': 100 });
+  
 });
 
 // Terms and conditions 
