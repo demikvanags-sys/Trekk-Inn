@@ -710,6 +710,10 @@ h1 {
   gap: 1rem;
 }
 
+#about-link {
+  display: none;
+}
+
 .about1{
   width: 100%;
   font-size: 1.5rem;
@@ -739,6 +743,10 @@ h1 {
   align-items: center;
   text-align: center;
   gap: 1rem;
+}
+
+#terms-link {
+  display: none;
 }
 
 

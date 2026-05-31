@@ -173,7 +173,7 @@ $('#burger-button').on('click', function() {
 
   $('#home-screen, #paymentForm, #confirmation-screen').hide();
   
-  $('#menu, #menu-back').css({ 'display': 'flex', 'opacity': 100 });
+  $('#menu, #menu-back, #about-link, #terms-link').css({ 'display': 'flex', 'opacity': 100 });
 });
 
 $('#menu-back').on('click', function() {
@@ -185,7 +185,7 @@ $('#menu-back').on('click', function() {
 $('#about-link').on('click', function() {
   $(this).hide();
   
-  $('#home-screen, #paymentForm, #confirmation-screen, #menu').hide();
+  $('#home-screen, #paymentForm, #confirmation-screen, #menu, #about-link').hide();
   
   $('#about, #menu-back').css({ 'display': 'flex', 'opacity': 1 });
   
@@ -200,6 +200,17 @@ $('#terms-link').on('click', function() {
   
   $('#terms, #menu-back').css({ 'display': 'flex', 'opacity': 1 });
 });
+
+// back arrow
+
+$('#back-arrow').on('click', function() {
+  $(this).hide();
+
+  $('#home-screen, #paymentForm, #confirmation-screen, #terms, #about').hide();
+  
+  $('#menu, #menu-back, #about-link').css({ 'display': 'flex', 'opacity': 1 });
+});
+
 
 
 // Confirm booking
