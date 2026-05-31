@@ -108,6 +108,34 @@ $('.carousel-item').on('click', function() {
         $('#product-page').fadeIn(300);
     });
 });
+
+$('#back-to-home').on('click', function() {
+        $('#nav-bar').show();
+        $('.bottom-nav').css('display', 'flex');
+        $('#product-page').fadeOut(200, function() {
+            $('#home-screen').fadeIn(300);
+        });
+    });
+
+
+//checkout page
+$('.add-to-cart-btn').on('click', function() {
+        if (selectedTentImage !== "") {
+            $('#checkout-dynamic-img').attr('src', selectedTentImage);
+        }
+        $('#checkout-page .back-category-title').text('Check Out');
+        $('#product-page').fadeOut(200, function() {
+            $('#checkout-page').fadeIn(300);
+        });
+    });
+
+    $('#back-to-product').on('click', function() {
+        $('#checkout-page').fadeOut(200, function() {
+            $('#product-page').fadeIn(300);
+        });
+    });
+
+
 // About us 
 
 $('showAbout').on('click', function() {
