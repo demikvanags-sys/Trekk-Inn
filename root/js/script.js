@@ -107,7 +107,6 @@ $('#back-to-home').on('click', function() {
         });
     });
 
-
 //checkout page
 $('.add-to-cart-btn').on('click', function() {
         if (selectedTentImage !== "") {
@@ -125,15 +124,28 @@ $('.add-to-cart-btn').on('click', function() {
         });
     });
 
+// Menu 
+
+$('#burger-button').on('click', function() {
+  $(this).hide();
+
+  $('#home-screen, #paymentForm, #confirmation-screen').hide();
+  
+  $('#menu, #menu-back').css({ 'display': 'flex', 'opacity': 100 });
+});
+
+$('#menu-back').on('click', function() {
+    location.reload();
+});
 
 // About us 
 
-$('#About').on('click', function() {
+$('#about-link').on('click', function() {
   $(this).hide();
+  
   $('#home-screen, #paymentForm, #confirmation-screen, #menu').hide();
   
-  $('#menu,').css({ 'display': 'none', 'opacity': 0 });
-  $('#about, #menu-back').css({ 'display': 'flex', 'opacity': 100 });
+  $('#about, #menu-back').css({ 'display': 'flex', 'opacity': 1 });
   
 });
 
