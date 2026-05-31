@@ -6,7 +6,9 @@ $(document).ready(function() {
         
         // 2. Hacemos que el nav-bar aparezca suavemente (fade) 
         // o aparezca de golpe justo cuando empieza la animación
-        $('#nav-bar').fadeIn(400); 
+        $('#nav-bar').fadeIn(400);
+        $('#home-screen').hide();
+        $('#home-screen').fadeIn(400);
 
         // 3. Opcional: Quitar el welcome del DOM después de que termine la animación
         setTimeout(function() {
@@ -15,7 +17,7 @@ $(document).ready(function() {
     });
 
     // Evento del burger menu
-    $('#open-menu').on('click', function() {
+    $('#burger-button').on('click', function() {
         $(this).toggleClass('active');
         console.log("Menú abierto");
     });
@@ -26,24 +28,64 @@ $(document).ready(function() {
 
 
 
+// Payment info
+$('.showFormBtn').on('click', function() {
 
-// home screen in
-$('#welcome-screen').on('click', function() {
-  $(this).addClass('slide-up');
-  
-  // Mostramos el nav superior y la home screen con un delay o fade
-  $('#nav-bar').fadeIn(400);
-  $('#home-screen').fadeIn(400);
+    $('#checkout-page').fadeOut(200);
+
+    $('#paymentForm')
+        .css({
+            'display': 'flex'
+        })
+        .hide()
+        .fadeIn(300);
+
 });
 
-// Payment info
-$('#showFormBtn').on('click', function() {
-    $('#paymentForm').css('display', 'flex').hide().fadeIn(100);
-    $(this).hide();
+$('#backArrow').on('click', function(e) {
+
+    e.preventDefault();
+
+    $('#paymentForm').fadeOut(200, function() {
+
+        $('#checkout-page').fadeIn(300);
+
+    });
+
+});
+
+$('.gpay-btn').on('click', function() {
+
+    $('#checkout-page').fadeOut(200);
+
+    $('#success-page').fadeIn(300);
+
+});
+
+$('#paymentForm').on('submit', function(e) {
+
+    e.preventDefault();
+
+    $('#paymentForm').fadeOut(200);
+
+    $('#checkout-page').fadeOut(200);
+
+    $('#success-page').fadeIn(300);
+
+});
+
+$('#close-success').on('click', function() {
+
+    $('#success-page').fadeOut(200, function() {
+
+        $('#home-screen').fadeIn(300);
+
+    });
+
 });
 
 // Card number validation
-CardNumberInput.oninput = function () {
+$('#CardNumberInput').on('input', function () {
 
   let number = this.value.replace(/\D/g, "");
 
@@ -59,12 +101,12 @@ CardNumberInput.oninput = function () {
     number = number.slice(0, 14) + " " + number.slice(14);
   }
 
-  this.value = number;
-};
+  $(this).val(number);
+});
 
 
 // Expiry date validation
-ExpiryInput.oninput = function () {
+$('#ExpiryInput').on('input', function () {
 
   let date = this.value.replace(/\D/g, "");
 
@@ -72,17 +114,17 @@ ExpiryInput.oninput = function () {
     date = date.slice(0, 2) + "/" + date.slice(2);
   }
 
-  this.value = date;
-};
+  $(this).val(date);
+});
 
 
 // CVV validation
-CVVInput.oninput = function () {
+$('#CVVInput').on('input', function () {
 
   let cvv = this.value.replace(/\D/g, "");
 
-  this.value = cvv;
-};
+  $(this).val(cvv);
+});
 
 
 
@@ -159,16 +201,11 @@ $('#About').on('click', function() {
 
 // Terms and conditions 
 
-$('showTerms').on('click', function() {
+$('#showTerms').on('click', function() {
     $('#terms').css('display', 'flex').hide().fadeIn(100);
     $(this).hide();
 });
 
-//Confirmation screen 
-
-
-    // Show confirmation
-    displayConfirmation();
 
 // Confirm booking
 function confirmBooking() {
