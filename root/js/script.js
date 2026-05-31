@@ -240,17 +240,6 @@ function confirmBooking() {
     
 }
 
-// Nav button click behavior
-
-document.addEventListener('DOMContentLoaded', () => {
-  const homeBtn = document.getElementById('homeBtn');
-
-  if (homeBtn) {
-    homeBtn.addEventListener('click', () => {
-      window.location.href = 'product-page.html'; //click home button, go to product page
-    });
-  }
-});
 
 // About back button
 $('#about-back-btn').on('click', function() {
@@ -271,5 +260,47 @@ $('#terms-back-btn').on('click', function() {
         $('#menu').fadeIn(300);
 
     });
+
+});
+
+// HOME BUTTON
+$('#home-nav-btn').on('click', function() {
+
+    $('#menu').hide();
+    $('#about').hide();
+    $('#terms').hide();
+    $('#product-page').hide();
+    $('#checkout-page').hide();
+    $('#paymentForm').hide();
+    $('#success-page').hide();
+
+    $('#burger-button').show();
+    $('#menu-back').hide();
+
+    $('#home-screen').fadeIn(300);
+
+});
+
+
+// PRODUCT BUTTON
+$('#product-nav-btn').on('click', function() {
+
+    // If already on product page do nothing
+    if ($('#product-page').is(':visible')) {
+        return;
+    }
+
+    $('#menu').hide();
+    $('#about').hide();
+    $('#terms').hide();
+    $('#checkout-page').hide();
+    $('#paymentForm').hide();
+    $('#success-page').hide();
+    $('#home-screen').hide();
+
+    $('#burger-button').show();
+    $('#menu-back').hide();
+
+    $('#product-page').fadeIn(300);
 
 });
